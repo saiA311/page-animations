@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7rem 7rem 7rem 9rem;
+      grid-template-columns: 1fr 7rem 7rem 7rem 9rem;
+  background: linear-gradient(45deg, #18fb4d 0%, #1961e8 30%);
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  -webkit-animation: load 0.4s ease-in-out;
+          animation: load 0.4s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 2px 3px;
+}
+
+.menu-link:visited, .menu-link:link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 2px 3px 2px 3px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FAFAFA;
+}
+
+.menu-link:hover {
+  color: #51375c;
+}
+
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  20% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  40% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  60% {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  80% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes load {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  20% {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+  }
+  40% {
+    -webkit-transform: translateX(-60%);
+            transform: translateX(-60%);
+  }
+  60% {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  80% {
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes rload {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  20% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  40% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+  60% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  80% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes rload {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  20% {
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+  }
+  40% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+  60% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  80% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.header {
+  display: inline-block;
+  height: 90vh;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right bottom, from(#662ee8), color-stop(98%, #4627f7));
+  background: linear-gradient(to right bottom, #662ee8 0%, #4627f7 98%);
+  -webkit-animation: load 1.6s ease-in-out 1;
+          animation: load 1.6s ease-in-out 1;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.img {
+  height: 40rem;
+  width: 80%;
+  margin-top: 3%;
+  position: absolute;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+  -webkit-animation: rload 0.4s ease-in-out;
+          animation: rload 0.4s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+/*# sourceMappingURL=style.css.map */
